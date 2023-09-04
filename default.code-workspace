@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "template-nodejs",
+      "path": "."
+    }
+
+  ],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
