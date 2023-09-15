@@ -9,10 +9,15 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "start-dev": "node -r dotenv/config ./dist/index dotenv_config_path=./dev.env",
-    "start-prod": "node -r dotenv/config ./dist/index dotenv_config_path=./prod.env",
-    "build": "./node_modules/typescript/bin/tsc",
-    "lint": "./node_modules/eslint/bin/eslint.js -c .eslintrc.json --ext .ts src"
+    "build": "run-script-os",
+    "build:darwin:linux": "./node_modules/typescript/bin/tsc",
+    "build:win32": ".\\node_modules\\typescript\\bin\\tsc",
+    "start": "run-script-os",
+    "start:darwin:linux": "node -r dotenv/config ./dist/index dotenv_config_path=./dev.env",
+    "start:win32": "node -r dotenv/config .\\dist\\index dotenv_config_path=.\\dev.env",
+    "lint": "run-script-os",
+    "lint:darwin:linux": "./node_modules/eslint/bin/eslint.js -c .eslintrc.json --ext .ts src",
+    "lint:win32": ".\\node_modules\\eslint\\bin\\eslint.js -c .eslintrc.json --ext .ts src"
   },
   "author": "Aljosa Vister",
   "license": "ISC",
@@ -20,6 +25,7 @@
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
+    "run-script-os": "^1.1.6",
     "@types/node": "^20.5.9",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",

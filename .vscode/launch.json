@@ -8,7 +8,7 @@
       "outputCapture": "std",
       "type": "node",
       "request": "launch",
-      "name": "start-dev",
+      "name": "start",
       "runtimeArgs": [
         "--preserve-symlinks"
       ],
@@ -16,21 +16,6 @@
       "program": "${workspaceFolder}/dist/index.js",
       "preLaunchTask": "Build",
       "envFile": "${workspaceFolder}/dev.env",
-      "outFiles": [
-        "${workspaceFolder}/dist/**/*.js"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "start-prod",
-      "runtimeArgs": [
-        "--preserve-symlinks"
-      ],
-      "sourceMaps": true,
-      "program": "${workspaceFolder}/dist/index.js",
-      "preLaunchTask": "Build",
-      "envFile": "${workspaceFolder}/prod.env",
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ]

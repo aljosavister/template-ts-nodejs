@@ -1,6 +1,2 @@
-import Env from "./env";
-
-const env = new Env();
-
-console.log(`Argv: ${env.getArg()}`);
-console.log(`Env: ${env.getEnv()}`);
+console.log(`Argv: ${JSON.stringify(process.argv)}`);
+console.log(`Env: ${JSON.stringify(process.env)}`);
