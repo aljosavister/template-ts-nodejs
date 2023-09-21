@@ -11,13 +11,13 @@
   "scripts": {
     "build": "run-script-os",
     "build:darwin:linux": "./node_modules/typescript/bin/tsc",
-    "build:win32": ".\\node_modules\\typescript\\bin\\tsc",
+    "build:win32": ".\\node_modules\\.bin\\tsc.cmd",
     "start": "run-script-os",
     "start:darwin:linux": "node -r dotenv/config ./dist/index dotenv_config_path=./dev.env",
     "start:win32": "node -r dotenv/config .\\dist\\index dotenv_config_path=.\\dev.env",
     "lint": "run-script-os",
     "lint:darwin:linux": "./node_modules/eslint/bin/eslint.js -c .eslintrc.json --ext .ts src",
-    "lint:win32": ".\\node_modules\\eslint\\bin\\eslint.js -c .eslintrc.json --ext .ts src"
+    "lint:win32": ".\\node_modules\\.bin\\eslint.cmd -c .eslintrc.json --ext .ts src"
   },
   "author": "Aljosa Vister",
   "license": "ISC",
