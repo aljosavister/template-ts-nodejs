@@ -1,2 +1,4 @@
 {
+  "npm.exclude": ["**/bin"],
+  "npm.scriptExplorerExclude": [".*darwin.*",".*win32.*",".*prebuild.*",".*lint.*",".*make.*",".*initialize.*"]
 }
