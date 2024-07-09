@@ -15,7 +15,6 @@
       "sourceMaps": true,
       "program": "${workspaceFolder}/dist/index.js",
       "preLaunchTask": "Build",
-      "envFile": "${workspaceFolder}/dev.env",
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ]
