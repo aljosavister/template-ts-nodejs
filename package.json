@@ -1,6 +1,6 @@
 {
   "name": "template-nodejs",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "exports": "./dist/index.js",
   "type": "module",
@@ -16,22 +16,20 @@
     "start:darwin:linux": "node ./dist/index",
     "start:win32": "node .\\dist\\index",
     "lint": "run-script-os",
-    "lint:darwin:linux": "./node_modules/eslint/bin/eslint.js -c .eslintrc.json --ext .ts src",
-    "lint:win32": ".\\node_modules\\.bin\\eslint.cmd -c .eslintrc.json --ext .ts src"
+    "lint:darwin:linux": "./node_modules/eslint/bin/eslint.js .",
+    "lint:win32": ".\\node_modules\\.bin\\eslint.cmd ."
   },
   "author": "Aljosa Vister",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.10",
+    "prettier": "^3.3.2",
     "run-script-os": "^1.1.6",
-    "@types/node": "^20.5.9",
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
-    "eslint": "^8.48.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "typescript": "^5.5.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript-eslint": "^7.16.0"
   }
 }
